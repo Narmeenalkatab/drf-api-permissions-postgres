@@ -9,5 +9,10 @@ class Roze(models.Model):
     created_at = models.DateTimeField(auto_now_add=True)
     updated_at = models.DateTimeField(auto_now=True)
 
+   
+
+class Post(models.Model):
+    anything = models.CharField(max_length=255)
+
     def __str__(self):
-        return self.name
+        return self.anything
